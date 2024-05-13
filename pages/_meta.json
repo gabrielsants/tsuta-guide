@@ -1,15 +1,14 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "index": "Indrodução",
+  "guide":"Tesutā - Guia para testes em chatbots",
   "about": {
-    "title": "About",
+    "title": "Sobre",
     "type": "page"
   },
   "contact": {
-    "title": "Contact ↗",
+    "title": "Contato ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://www.linkedin.com/in/dev-gabriel-santos/",
     "newWindow": true
   }
 }

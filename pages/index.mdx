@@ -1,11 +1,23 @@
-# Introduction
+# Introdução
  
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
+Os chatbots tornaram-se parte integrante da comunicação moderna, ajudando as empresas e organizações a fornecer suporte ao cliente, automatizando tarefas e proporcionando experiências personalizadas em diversos dominios.
 
-## What is Nextra?
+O guia Tesutā utiliza testes metamorficos para garantir que o chatbot funcione conforme esperado. Portanto, o nosso objetivo é capacitar os programadores, os testadores e as partes interessadas com conhecimentos valiosos e melhores práticas em matéria de testes de chatbots.
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
+## O que são testes metamórficos?
 
-## Documentation
+Os testes metamórficos transcendem as limitações dos métodos convencionais ao explorar não apenas os resultados finais de um sistema, mas, crucialmente, as transformações observadas nas saídas quando as entradas sofrem alterações específicas. Esta abordagem paradigmática busca não apenas validar a corretude absoluta, mas compreender como o sistema responde a variações nas condições iniciais, proporcionando uma compreensão mais abrangente do seu comportamento
 
-The documentation is available at [https://nextra.site](https://nextra.site).
+### Quais as vantagens?
+
+A principal vantagem dos testes metamórficos reside na redução da dependência de oráculos, superando as limitações associadas à definição rígida de respostas ``corretas''. Essa flexibilidade, combinada com a capacidade de modelar transformações nas entradas, torna-os particularmente aptos a enfrentar desafios complexos, onde a determinação de corretude absoluta pode ser ambígua ou inatingível.
+
+### Como aplicar testes metamorficos?
+
+De maneira sucinta, o fluxo de teste pode ser dividido em três etapas, sendo elas: Identificação das relações metamórficas, Criação de um conjunto de dados de teste e Detecção de falhas. 
+
+- **Identificação das relações metamórficas**: s relações metamórficas são derivadas utilizando um conhecimento a respeito do domínio de aplicações de software em teste''. Além disso, as abordagens para definição destas relações envolvem: desenvolver as relações com base na especificação do software ou com base nos requisitos esperados pelo usuário. Desta maneira, a seleção da abordagem implica diretamente em como a metamorfose será testada, ou seja, as especificações foram atendidas após a metamorfose ou se os requisitos do usuário foram atendidos. Nem sempre a segunda opção reflete em propriedades necessárias para que o sistema funcione corretamente, ou seja, algumas funcionalidades podem ficar de fora neste cenário.
+
+- **Criação de um conjunto de dados de teste**: Para realizar esta etapa, é preciso criar casos de teste iniciais e casos de teste de acompanhamento. Sendo assim, para criar os casos de teste iniciais pode ser utilizado qualquer técnica de teste convencional, por exemplo, técnica estrutural, funcional, baseada em defeitos ou teste aleatório.  O próximo passo é criar o caso de teste de acompanhamento que são realizados alternando os casos iniciais de acordo com as modificações que foram definidas pelas relações metamórficas.
+
+- **Detecção de falhas**: Para cada um dos pares de teste inciais e de acompanhamento são executados para validar se a alteração corresponde à saída e se está prevista pela relação metamórfica definida. Quando ocorre uma violação desta relação em tempo de execução, isto significa uma prerrogativa para uma possível falha no programa que está sendo testado. Sendo assim, os testes metamórficos verificam a relação dos dados de entrada e de saída, isso possibilita verificar a conformidade do software mesmo quando o resultado (saída) é desconhecido
