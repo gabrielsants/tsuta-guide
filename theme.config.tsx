@@ -6,10 +6,22 @@ const config: DocsThemeConfig = {
   project: {
     link: 'https://github.com/gabrielsants/tsuta-guide',
   },
-  docsRepositoryBase: 'https://github.com/gabrielsants/tsuta-guide',
+  docsRepositoryBase: 'https://github.com/gabrielsants/tsuta-guide/tree/main/docs',
   footer: {
-    text: 'Nextra Docs Template',
+    text: 'Gabriel Santos © 2024',
   },
+  useNextSeoProps() {
+    return {
+      title: 'Tesutā',
+      description: 'Tesutā is a complete guide to perform metamorphic test on chatbots.',
+      openGraph: {
+        type: 'website',
+        url: 'https://tsuta-guide.vercel.app',
+        title: 'Tesutā',
+        description: 'Tesutā is a complete guide to perform metamorphic test on chatbots.',
+      },
+    }
+  }
 }
 
 export default config
